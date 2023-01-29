@@ -7,19 +7,19 @@ public class GroupAnagrams {
      */
     public List<List<String>> groupAnagrams(String[] strs) {
         if (strs.length == 0)
-            return new ArrayList();
-        Map<String, List> group = new HashMap<String, List>();
+            return new ArrayList<>();
+        Map<String, List<String>> group = new HashMap<>();
         for(String s: strs){
             // Sorting a single string
             char[] strList = s.toCharArray();
             Arrays.sort(strList);
             String sortedString = String.valueOf(strList);
             if(!group.containsKey(sortedString)){
-                group.put(sortedString, new ArrayList());
+                group.put(sortedString, new ArrayList<>());
             }
             group.get(sortedString).add(s);
             
         }
-        return new ArrayList(group.values());
+        return new ArrayList<>(group.values());
     }
 }
