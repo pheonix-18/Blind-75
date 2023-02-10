@@ -1,0 +1,4 @@
+git add .
+git commit -m "Message"
+git remote add <NAME> https://github.com/pheonix-18/Blind-75.git
+git push <NAME>
