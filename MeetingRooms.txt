@@ -1,0 +1,6 @@
+I am thinking to solve this problem like this. Give your comments
+1. Sort the intervals based on start time
+2. For every interval, check if it overlaps with the previous intervals
+3. If Overlap return false
+4. Do 2 and 3 repeatedly
+5. Return true
